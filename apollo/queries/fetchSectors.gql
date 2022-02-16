@@ -1,0 +1,17 @@
+{
+
+    lend {
+  
+      # View name and id for different sectors
+  
+      sector {
+  
+        id
+  
+        name
+  
+      }
+  
+    }
+  
+  }

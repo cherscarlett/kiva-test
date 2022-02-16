@@ -1,0 +1,47 @@
+query sector($id: [Int]) {
+
+  lend {
+
+    # fetch a set of loans
+
+    loans(limit: 12, offset: 0, filters: {sector: $id}) {
+
+      values {
+
+        id
+
+        geocode {
+
+          country {
+
+            name
+
+          }
+
+        }
+
+        name
+
+        loanAmount
+
+        loanFundraisingInfo {
+
+          fundedAmount
+
+        }
+
+        image {
+
+          url(customSize: "w480h300")
+
+        }
+
+        use
+
+      }
+
+    }
+
+  }
+
+}
